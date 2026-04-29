@@ -1,0 +1,18 @@
+.todo-app {max-width: 500px;margin: 50px auto;padding: 20px;background-color: #282c34;border-radius: 8px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5));color: #e0e0e0;}
+.todo-app h1 {text-align: center;color: #61dafb;margin-bottom: 25px;}
+.input-section {display: flex;margin-bottom: 20px;}
+.input-section input {flex-grow: 1;padding: 10px;border: 1px solid #444;border-radius: 4px;background-color: #3a3f47;color: #e0e0e0;font-size: 16px;}
+.input-section input::placeholder {color: #a0a0a0;}
+.input-section button {padding: 10px 15px;margin-left: 10px;background-color: #61dafb;color: #282c34;border: none;border-radius: 4px;cursor: pointer;font-size: 16px;transition: background-color 0.2s;}
+.input-section button:hover {background-color: #21a1f1;}
+.todo-list {list-style: none;padding: 0;}
+.todo-list li {display: flex;align-items: center;padding: 12px 0;border-bottom: 1px solid #444;}
+.todo-list li:last-child {border-bottom: none;}
+.todo-list li input[type="checkbox"] {-webkit-appearance: none;appearance: none;width: 20px;height: 20px;border: 2px solid #61dafb;border-radius: 4px;cursor: pointer;margin-right: 15px;position: relative;outline: none;}
+.todo-list li input[type="checkbox"]:checked {background-color: #61dafb;border-color: #61dafb;}
+.todo-list li input[type="checkbox"]:checked::after {content: '\2713';font-size: 14px;color: #282c34;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.todo-list li span {flex-grow: 1;font-size: 18px;color: #e0e0e0;}
+.todo-list li.completed span {text-decoration: line-through;color: #a0a0a0;}
+.todo-list li .delete-btn {background-color: #e74c3c;color: white;border: none;padding: 6px 10px;border-radius: 4px;cursor: pointer;font-size: 14px;transition: background-color 0.2s;}
+.todo-list li .delete-btn:hover {background-color: #c0392b;}
+.task-count {text-align: center;margin-top: 20px;font-size: 16px;color: #a0a0a0;}
